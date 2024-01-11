@@ -1,0 +1,42 @@
+        body{
+            font-family: Arial, sans-serif;
+            width: 99%;
+            height: 99%;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            flex-direction: column;
+            background-color: #fabecd;
+            text-align: center;
+        }
+
+        h1 {
+            color: #da8c8c;
+        }
+
+        h2 {
+            color: #da8c8c;
+        }
+        p {
+            color: #000000;
+
+        }
+        li {
+            color: #000000;
+        }
+
+        .hearts {
+            font-size: 23px;
+            font-weight: bold;
+            position: fixed;
+            top: -1vh;
+            left: 0;
+            animation: fall 1s ease-in infinite;
+            color: #da8c8c;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(250vh);
+            }
+        }

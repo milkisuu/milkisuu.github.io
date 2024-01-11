@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>Io ovvio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 99%;
+            height: 99%;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            flex-direction: column;
+            background-color: #fabecd;
+            text-align: center;
+        }
+        .custom-cursor-container {
+        cursor: none;
+        }
+        .custom-cursor {
+        cursor: url('c:\Users\Utente\Desktop\sfondi\cursore rosa.png') 16 16, auto;
+        }
+        h1 {
+            color: #da8c8c;
+        }
+
+        h2 {
+            color: #da8c8c;
+        }
+        p {
+            color: #000000;
+
+        }
+        li {
+            color: #000000;
+        }
+
+        .hearts {
+            font-size: 23px;
+            font-weight: bold;
+            position: fixed;
+            top: -1vh;
+            left: 0;
+            animation: fall 1s ease-in infinite;
+            color: #da8c8c;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(250vh);
+            }
+        }
+        </style>
+    </head>
+    <body class="custom-cursor">
+<div class="Io">
+    <header>
+        <h1>Denise ೀ⋆｡♡</h1>
+        <h2>⋆｡‧˚ʚ♡ɞ˚‧｡⋆</h2>
+    </header>
+
+    <section>
+        <h3 style="color:#da8c8c;"> Io ✧˖°ʚ♡ɞ♡</h3>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        Ciaooooo
+        </p>
+        <img src="c:\Users\Utente\Desktop\sfondi\meow.jpg">
+        <div class="container"></div>
+    </section>
+</div>
+</body>
+
+<script>
+    function hearts() {
+        const container = document.querySelector('.container');
+    
+        const creat = document.createElement('div');
+        creat.classList.add('hearts');
+        creat.innerHTML = '♡';
+        creat.style.left = Math.random() * 100 + 'vw';
+        creat.style.animationDuration = Math.random() * 5 + 4 + 's';
+    
+        container.appendChild(creat);
+    
+        setTimeout(() => {
+            creat.remove();
+        }, 3000);
+    }
+    
+    setInterval(hearts, 100);
+</script>
+</html>
