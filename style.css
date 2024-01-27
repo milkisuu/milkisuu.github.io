@@ -1,13 +1,12 @@
         body{
             font-family: Arial, sans-serif;
-            width: 99%;
-            height: 99%;
-            display: flex;
+            box-sizing: border-box;
             justify-content: center;
             align-items: center; 
             flex-direction: column;
             background-color: #fabecd;
             text-align: center;
+            cursor:url("immagini/cursore.png"), auto;
         }
 
         h1 {
