@@ -6,21 +6,55 @@
             flex-direction: column;
             background-color: #fabecd;
             text-align: center;
-            cursor:url("immagini/cursore.png"), auto;
+        }
+        
+        body:before {
+            content: " ";
+            height: 100vh;
+            width: 100vw;
+            display: block;
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            z-index: 100;
+            background-image: url('https://i.pinimg.com/originals/33/38/92/33389288179d89373a8a43ad48d9469b.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:center;
+            animation: yourAnimation 2s ease 0s 1 normal forwards;
+            pointer-events: none;}
+            @keyframes yourAnimation { 0.0%{ opacity: 1;} 75%{ opacity: 1; } 100%{ opacity: 0;} 
+        } 
+
+        body::after {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(rgb(82 15 15 / 48%) 50%, rgb(0 0 0 / 0%) 50%);
+            z-index: 2;
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
         }
 
+        * {
+            cursor: url(https://64.media.tumblr.com/bab65334373c32bd34349156091e984c/09c8fa9b2e30bac7-b0/s75x75_c1/5bbf38714e2463bf9253c30f11af355ca930a9e0.pnj), auto !important;
+        }
+        
+        
         h1 {
             color: #da8c8c;
+            padding-top: 20px;
         }
 
         h2 {
             color: #da8c8c;
         }
-        p {
-            color: #000000;
 
-        }
-        li {
+        p {
             color: #000000;
         }
 
@@ -33,7 +67,7 @@
             animation: fall 1s ease-in infinite;
             color: #da8c8c;
         }
-
+        
         @keyframes fall {
             to {
                 transform: translateY(250vh);
