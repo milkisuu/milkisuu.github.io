@@ -1,3 +1,4 @@
+    //hearts
     function hearts() {
         const container = document.querySelector('.container');
     
@@ -15,5 +16,4 @@
     }
     
     setInterval(hearts, 100);
-
     
